@@ -1,4 +1,8 @@
-var $registrationMode = '1';
+if(!$registrationMode){
+	let url = location.href;
+	if(url.includes('http://dangkyhoc.vnu.edu.vn/dang-ky-mon-hoc-nganh'))
+		var $registrationMode = url.substring(url.length-1);
+}
 var $registrationAvailable = ('True').toLowerCase();
 if($("#s2id_autogen1").length==0 && $("div.alert.alert-danger.alert-dismissable").length!=0){
     //append GUI

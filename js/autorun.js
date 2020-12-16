@@ -11,7 +11,7 @@ function login(){
             }
         }catch{
             console.log("Đã xảy ra lỗi khi thực hiện đăng nhập tự động"); //có thể do quá tải
-            window.location.reload(); // reload và thử đăng nhập lại
+            setTimeout(window.location.reload(), 300);
         }
     })
 }
